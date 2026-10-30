@@ -1,5 +1,6 @@
 services:
   app:
+    image: ${GUESTBOOK_IMAGE:-guestbook}:${GUESTBOOK_TAG:-local}
     build: .
     ports:
       - "8000:8000"
